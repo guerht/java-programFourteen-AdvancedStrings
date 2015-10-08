@@ -48,18 +48,10 @@ public class Encryption {
 		 * Search for g's
 		 * Search for b's
 		 */
-		if(encStr.contains("ag',r")) {
-			encStr.replace("ag',r", "v");
-		}
-		if(encStr.contains("ssad")) {
-			encStr.replace("ssad", "m");
-		}
-		if(encStr.contains("jeb..w")) {
-			encStr.replace("jeb..w", "g");
-		}
-		if(encStr.contains("dug>?/")) {
-			encStr.replace("dug>?/", "b");
-		}
+		encStr = encStr.replace("ag',r", "v");
+		encStr = encStr.replace("ssad", "m");
+		encStr = encStr.replace("jeb..w", "g");
+		encStr = encStr.replace("dug>?/", "b");
 		return encStr;
 	}
 }
